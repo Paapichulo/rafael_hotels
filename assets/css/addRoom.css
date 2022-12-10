@@ -1,0 +1,74 @@
+.roomAdd-wrapper{
+    padding: 50px 50px;
+}
+.roomAdd-wrapper .prof-img{
+    float: right;
+}
+
+.roomAdd-wrapper .prof-img input[type="file"]{
+    color: var(--red);
+}
+
+.roomAdd-wrapper .prof-img button{
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 10px;
+    border-radius: var(--radius-5);
+    box-shadow: 0 0 5px var(--shadow-grey);
+    transition: var(--transition-02);
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+}
+
+.roomAdd-wrapper .prof-img button:hover{background-color: rgb(83, 0, 0);}
+
+
+.roomAdd-form .message-div{text-align: center;}
+
+.roomAdd-form input, select{
+    background-color: var(--shadow-grey);
+    border: 1px solid var(--grey);
+    padding: 10px 30px;
+    border-radius: var(--radius-5);
+    color: var(--dark);
+    margin: 10px 0;
+    transition: var(--transition-02);
+}
+
+.roomAdd-form select{
+    background-color: var(--shadow-grey);
+    border: 1px solid var(--grey);
+    padding: 10px 30px;
+    border-radius: var(--radius-5);
+    color: var(--dark);
+    margin: 10px 0;
+    transition: var(--transition-02);
+}
+
+.roomAdd-form option{
+    background-color: var(--light);
+}
+
+.roomAdd-form input:focus{
+    background-color: var(--light);
+    border: 1px solid var(--red);
+}
+
+.roomAdd-form select:focus{
+    background-color: var(--light);
+    border: 1px solid var(--red);
+}
+
+.roomAdd-form button{
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 30px;
+    float: right;
+    border-radius: var(--radius-5);
+    box-shadow: 0 0 5px var(--shadow-grey);
+    transition: var(--transition-02);
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.roomAdd-form button:hover{background-color: rgb(83, 0, 0);}

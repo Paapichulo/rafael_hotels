@@ -1,0 +1,83 @@
+.about-us{
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.904), rgba(56, 56, 56, 0.726)), url(../img/hotel_background2.jpg) no-repeat fixed;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-us h1{
+    color: white;
+    font-size: 30px;    
+}
+
+.about-wrapper{
+    max-width: 1120px;
+    width: 900px;
+    margin: 0 auto;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text{
+    width: 100%;
+    
+}
+
+
+.about-text h1{
+    color: var(--red);
+    font-size: 30px;
+    margin: 20px 0 40px 0;
+}
+
+.about-text img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.about-wrapper .about-text p{
+    font-family: var(--ff-cursive);
+}
+
+.about-text button{
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.about-text button:hover{
+    background-color: rgb(134, 0, 0);
+}
+
+/* .about-image{
+    width: 100%;
+} */
+
+.about-image img{
+    width: 100%;
+    height: 300px;
+}
+
+
+@media (max-width: 900px){
+    .about-wrapper{
+        width: 800px;
+    }
+}
+
+@media (max-width: 768px){
+    .about-wrapper{
+        display: block;
+        width: 100%;
+    }
+}

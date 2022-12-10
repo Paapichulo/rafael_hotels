@@ -1,0 +1,92 @@
+.booked-rooms{
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.booked-rooms .each{
+    width: 200px;
+}
+.booked-rooms .each img{
+    height: 150px;
+    width: 100%;
+}
+
+.booked-rooms .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.booked-rooms h1{
+    font-size: 12px;
+    margin: 5px 0;
+    color: var(--grey);
+    font-family: var(--ff-serif);
+}
+
+.booked-rooms span{
+    font-size: 14px;
+    color: var(--dark);
+    font-family: var(--ff-segoe);
+}
+
+.dropdown-btn{
+    background-color: var(--green);
+    color: var(--light);
+    padding: 5px;
+    border-radius: var(--radius-5);
+    transition: var(--transition-02);
+}
+
+.dropdown-btn:hover{
+    background-color: rgb(0, 99, 53);
+}
+
+.dropdown-div{
+    position: relative;
+}
+
+.dropdown-menu{
+    background-color: var(--light);
+    border-radius: var(--radius-5);
+    position: absolute;
+    top: 0;
+    left: 30px;
+
+    width: max-content;
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+.dropdown-menu li{
+    margin: 5px 0;
+    padding: 5px 20px;
+    transition: var(--transition-02);
+}
+
+.dropdown-menu li a{
+    font-size: 13px;
+    font-family: var(--ff-serif);
+}
+
+.dropdown-menu li:hover{
+    background-color: var(--shadow-grey);
+}
+
+.active{
+    max-height: max-content;
+    border: 1px solid var(--shadow-grey);
+}
+
+@media(max-width: 768px){
+    .booked-rooms{padding-top: 70px;}
+    .booked-rooms .each{
+        width: 300px;
+    }
+}
+
+

@@ -1,0 +1,99 @@
+
+.for-top{
+    /* background: linear-gradient(to right, var(--transparent-black), var(--transparent-black)),url(../img/hotel_background.jpg);
+    background-size: cover;
+    background-position: top; */
+    background-color: var(--grey);
+}
+
+
+.wrapper{
+    background: linear-gradient(to right, rgba(0, 3, 39, 0.575), rgba(15, 15, 15, 0.842)),  url('../img//hotel_background2.jpg') no-repeat fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.reg-form{
+    background-color: var(--transparent-black);
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.reg-form .message-div{text-align: center;}
+
+
+.reg-form input{
+    background-color: rgba(73, 73, 73, 0.322);
+    padding: 10px 30px;
+    border-radius: var(--radius-pill);
+    color: var(--light);
+}
+
+.reg-form input[type="email"]{margin-top: 20px;}
+
+.reg-form input:focus{border: 1px solid var(--grey);}
+
+.reg-form .role1,
+.reg-form .role3,
+.reg-form .role4{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 20px 0;
+}
+.reg-form .role4{position: relative;}
+.reg-form .role4 #icon{
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    color: var(--light); 
+    cursor: pointer;
+
+}
+
+.reg-form .role5{margin: 0 0 30px 0;}
+
+.reg-form button{
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 0 5px var(--shadow-grey);
+    transition: var(--transition-02);
+    font-weight: 500;
+}
+
+.reg-form button:hover{background-color: rgb(0, 0, 83);}
+
+.reg-form .role5 a{
+    text-decoration: underline;
+    color: var(--light);
+    float: right;
+    margin: 10px 0;
+    transition: var(--transition-02);
+}
+
+.reg-form .role5 a:hover{transform: var(--transform);}
+
+@media(max-width: 600px){
+    .reg-form{width:100%;}
+
+    /* .reg-form .role1,
+    .reg-form .role3,
+    .reg-form .role4{display: block;} */
+
+    .reg-form input[type="text"]{margin-top: 20px;}
+
+    .reg-form input[type="tel"]{margin-bottom: 20px;}
+
+
+    /* .reg-form .role4 #icon{margin-left: 8px;} */
+}
+
+

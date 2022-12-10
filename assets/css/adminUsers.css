@@ -1,0 +1,88 @@
+
+.users-wrapper{
+    width: 100%;
+    padding: 30px 20px;
+    overflow-x: auto;
+}
+
+.users-wrapper .search-wrapper form{
+    display: flex;
+}
+
+.users-wrapper .search-wrapper input{
+    background-color: var(--shadow-grey);
+    padding: 10px 20px;
+    border-top-left-radius: var(--radius-10);
+    border-bottom-left-radius: var(--radius-10);
+}
+
+.users-wrapper .search-wrapper input:focus{
+    border: 1px solid var(--red);
+    background-color: var(--light);
+}
+
+.users-wrapper .search-wrapper button{
+    background-color: var(--red);
+    padding: 10px 20px;
+    border-top-right-radius: var(--radius-10);
+    border-bottom-right-radius: var(--radius-10);
+    color: var(--light);
+    transition: var(--transition-02);
+}
+
+.users-wrapper .search-wrapper button:hover{
+    background-color: var(--green);
+}
+
+
+.users-wrapper .total-users-card{
+    background-color: var(--shadow-grey);
+    padding: 30px 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    float: right;
+    border-radius: var(--radius-10);
+    box-shadow: 0 0 10px var(--transparent-black);
+}
+
+.users-wrapper .total-users-card h1{
+    color: var(--light-red);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: var(--ff-serif);
+    font-weight: bold;
+}
+
+.users-wrapper .total-users-card p{
+    font-family: var(--ff-cursive);
+    color: var(--transparent-black);
+    font-size: 20px;
+}
+
+.users-wrapper table{
+    width: 100%;
+}
+
+.users-wrapper tr .td1{
+    color: var(--red);
+    font-family: var(--serif);
+    font-weight: 700;
+}
+
+.users-wrapper td{
+    color: var(--grey);
+    font-family: var(--ff-cursive);
+    font-size: 15px;
+}
+
+.users-wrapper td img{
+    width: 30px;
+}
+
+th, td{
+    padding: 20px;
+}

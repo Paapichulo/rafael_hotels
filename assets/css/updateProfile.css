@@ -1,0 +1,54 @@
+.updateP-wrapper{
+    padding: 30px 50px;
+}
+.updateP-wrapper .prof-img{
+    float: right;
+}
+
+.updateP-wrapper .prof-img input[type="file"]{
+    color: var(--red);
+}
+
+.updateP-wrapper .prof-img button{
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 10px;
+    border-radius: var(--radius-5);
+    box-shadow: 0 0 5px var(--shadow-grey);
+    transition: var(--transition-02);
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+}
+
+.updateP-wrapper .prof-img button:hover{background-color: rgb(83, 0, 0);}
+
+
+.update-form .message-div{text-align: center;}
+
+.update-form input{
+    background-color: var(--shadow-grey);
+    border: 1px solid var(--grey);
+    padding: 10px 30px;
+    border-radius: var(--radius-5);
+    color: var(--dark);
+    margin: 10px 0;
+    transition: var(--transition-02);
+}
+
+.update-form input:focus{
+    background-color: var(--light);
+    border: 1px solid var(--red);
+}
+
+.update-form button{
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 30px;
+    float: right;
+    border-radius: var(--radius-5);
+    box-shadow: 0 0 5px var(--shadow-grey);
+    transition: var(--transition-02);
+    font-weight: 500;
+}
+
+.update-form button:hover{background-color: rgb(83, 0, 0);}

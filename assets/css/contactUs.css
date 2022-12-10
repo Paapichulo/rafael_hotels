@@ -1,0 +1,131 @@
+
+
+.contact-us{
+    background: linear-gradient(to right, rgba(0, 3, 39, 0.575), rgba(15, 15, 15, 0.842)),  url('../img//hotel_background2.jpg') no-repeat fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 30px 0;
+    width: 100%;
+    /* width: 90%;
+    margin: 20px auto; */
+    padding: 20px;
+    /* background-color: rgb(230, 230, 230); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us h1{
+    color: var(--light);
+    font-size: 30px;
+}
+
+.contact-us p{
+    color: var(--light);
+    margin: 20px 0;
+}
+
+.contact-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px;
+}
+
+
+.contact-wrapper h1{color: var(--red); font-size: 20px;}
+
+.contact-wrapper .information{
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    width: 40%;
+    position: relative;
+}
+
+.contact-wrapper .information h1{color: var(--light);}
+
+.contact-wrapper .information ul li{
+    margin-top: 20px;
+}
+.contact-wrapper .social-links{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.contact-wrapper .social-links img{
+    width: 30px;
+    background-color: var(--light);
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.2s ease;
+}
+
+.contact-wrapper .social-links img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.contact-form{
+    width: 70%;
+    padding: 15px 20px;  
+    background-color: var(--light);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--grey);
+}
+.contact-form h1{
+    color: var(--dark);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 0 5px 0;
+}
+
+.contact-form p{
+    color: var(--dark);
+}
+
+.contact-form input{
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: var(--red);
+}
+
+.contact-form textarea{width: 100%;}
+
+.contact-form button{
+    background-color: var(--red);
+    padding: 8px 18px;
+    color: var(--light);
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.2s ease;
+}
+
+.contact-form button:hover{
+    background-color: #830202;
+}
+
+
+@media (max-width: 768px){
+
+    .contact-us{width: 100%;}
+    .contact-wrapper{display: block;}
+
+    .contact-wrapper .information,
+    .contact-wrapper .contact-form{width: 100%; margin: 20px 0;}
+
+    .contact-wrapper .information{height: 400px;}
+}

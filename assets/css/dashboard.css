@@ -1,0 +1,328 @@
+
+/*------------ RESETS------------------- */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{list-style: none;}
+
+a{
+    text-decoration: none !important;
+    color: var(--light);
+}
+
+a,
+img,
+span,
+label,
+input,
+select,
+button{display: block;}
+
+img{height: auto;}
+
+input,
+select,
+button{
+    background: none;
+    border: none;
+    outline: none;
+    font: inherit;
+}
+
+input,
+select {width: 100%;} 
+
+button {cursor: pointer;}
+
+
+address{font-style: normal;}
+
+html{
+    font-family: var(--ff-segoe);
+    scroll-behavior: smooth;
+}
+
+/* body{
+    background-color: var(--smoke);
+} */
+/* -----------------------END OF RESETS------------- */
+
+
+
+/*---------------- CUSTOMS VARIABLE ---------------- */
+:root{
+/* COLORS */
+    --red: #b60303;
+    --red2: #ff0000;
+    --blue: #0000ff;
+    --green: #008000;
+    --smoke: #f5f5f5;
+    --light-red: #793333;
+    --light-blue: #120530;
+    --golden-rod: #daa520;
+    --sky-blue: #87ceeb; 
+    --light: #fff;
+    --dark: #050505;
+    --grey: #5c5c5c;
+    --transparent-black: #000000ab;
+    --transparent-blue: #0400ff23;
+    --transparent-red: #ff000033;
+    --transparent-red2: #ff000079;
+    --transparent-grey: #99989800;
+    --hover-gold: #94832671;
+    --shadow-grey: #ccbfbf;
+    --none: rgba(0, 0, 0, 0);
+
+
+
+/* TYPOGRAPHY */
+    --ff-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --ff-cursive: cursive;
+    --ff-serif: sans-serif;
+    --ff-georgia: Georgia, 'Times New Roman', Times, serif;
+
+    /* --fs-1: 3.6rem;
+    --fs-2: 2.4rem;
+    --fs-3: 2rem;
+    --fs-4: 1.8rem;
+    --fs-5: 1.7rem;
+    --fw-600: 600;
+    --fw-500: 500; */
+
+/* SPACING */
+    --section-padding: 35px;
+
+/* SHADOW */
+    /* --shadow-1: 0 1px 2px hsla(0, 0%, 0%, 0.2);
+    --shadow-2: 0 10px 15px -5px var(--carcoal_20);
+    --shadow-3: 0 10px 25px -3px var(--carcoal_20);
+    --shadow-4: 0 0 3px var(--carcoal_15);
+    --shadow-5: 0 20px 25px -5px var(--carcoal_10),
+            0 10px 10px -5px var(--carcoal_10);
+    */
+/* BORDER-RADIUS */
+    --radius-pill: 45px;
+    --radius-50: 50%;
+    --radius-10: 10px;
+    --radius-8: 8px;
+    --radius-5: 5px;
+    --radius-2: 2px;
+    --radius-4: 4px;
+
+/* TRANSITION */
+    --transition-1: 1s ease;
+    --transition-02: 0.2s ease;
+
+    /* TRANSFORM */
+    --transform: scale(1.1);
+}
+
+
+
+/* --------------------REUSED STYLE ----------------- */
+.container{padding: 0 60px;}
+/* -------------------END OF REUSED STYLE */
+
+.dashboard{
+    position: relative;
+    height: 100%;
+}
+
+
+.menu{
+    position: absolute;
+    color: var(--light);
+    font-weight: bold;
+    background-color: var(--red);
+    height: 45px;
+    width: 100vw;
+}
+
+
+.toggle-btn-open{
+    top: 210px;
+    left: 20px;
+    background-color: var(--light-red);
+    color: var(--light);
+    padding: 5px 8px;
+    border-radius: var(--radius-5);
+    font-size: 18px;
+    margin: 5px;
+}
+
+.toggle-btn-close{
+    color: var(--light);
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+}
+
+.left-sidebar{
+    flex-basis: 18%;
+    width: 300px;
+    background-color: var(--red);
+    position: absolute;
+    left: -600px;
+    color: var(--light);
+    padding: 20px;
+    z-index: 20;
+    height: 100vh;
+    
+}
+
+.display-side{
+    left: 0;
+    transition: var(--transition-1);
+}
+.left-sidebar .brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-sidebar .brand img{
+    width: 55px;
+    border-radius: var(--radius-50);
+    box-shadow: 0 0 50px var(--shadow-grey);
+}
+
+.left-sidebar .brand h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.sideitems{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* height: 100vw; */
+}
+
+.sideitems a{
+    color: var(--light) !important;
+}
+
+.sidebar-link{
+    height: 78px;
+    width: 105px;
+    background-color: var(--transparent-black);
+    border-radius: var(--radius-10);
+    border: 1px solid var(--sky-blue);
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-02)
+}
+
+.sidebar-link:hover{transform: var(--transform);}
+
+.sidebar-link img{
+    width: 38px;
+    margin-bottom: 5px;
+}
+
+.sideitems .sidebar-link span{
+    font-size: 9px;
+    font-family: var(--ff-cursive);
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.sideitems .sidebar-link .add{
+    position: relative;
+}
+
+.sideitems .sidebar-link .add .plus{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+}
+
+.right-content{
+    flex-basis: 82%;
+    padding: 0 0 50px 0;
+}
+
+.right-content .cover{
+    background: linear-gradient(to right, rgba(0, 3, 39, 0.767), rgba(15, 15, 15, 0.842)),  url('../img//hotel_background2.jpg') no-repeat fixed; 
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    color: var(--light);
+    text-align: center;
+    padding-top: 70px;
+}
+
+.right-content .board{
+    margin-top: 50px;
+}
+
+
+.right-content .board .id{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+/* .right-content .board .id img{
+    height: 150px;
+    width: 200px;
+    box-shadow: 0 0 5px var(--dark);
+    border-radius: 50%;
+} */
+
+.right-content .board .id h1{color: var(--grey);}
+
+.right-content .board hr{
+    margin: 20px 50px;
+    border: 1px solid var(--red)
+}
+
+.right-content .board .user-details .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    padding: 10px 20px;
+}
+
+.right-content .board .user-details .row h1{
+    font-size: 17px;
+    color: var(--shadow-grey);
+}
+
+.right-content .board .user-details .row h2{
+    font-size: 13px;
+    color: var(--grey);
+}
+
+
+
+
+
+@media(max-width: 600px){
+    .container{padding: 0 20px;}
+}
+
+@media(max-width:768px){
+
+    .right-content .board .id img{width: 90px;}
+
+
+}
+
+@media(max-width: 992px){
+    .right-content .board .user-details .row{grid-template-columns: repeat(2,1fr);}
+}
+
